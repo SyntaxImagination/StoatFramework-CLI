@@ -28,6 +28,14 @@ const COPY = [
     path.join("Models", "Engines"),
 ];
 
+if (!fs.existsSync(path.join(REPO_ROOT, "System", "Core", "http.js"))) {
+    console.error(
+        "\n  build-template: the framework files are not in the parent folder.\n" +
+        "  Clone this repository as CLI/ inside the Stoat-Framework repository, then build from there.\n"
+    );
+    process.exit(1);
+}
+
 const framework = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, "package.json"), "utf-8"));
 const cli       = JSON.parse(fs.readFileSync(path.join(CLI_ROOT, "package.json"), "utf-8"));
 

@@ -17,18 +17,25 @@
   "engines": {
     "node": ">=18"
   },
-  "keywords": ["stoat", "stoatframework", "cli", "scaffold", "framework", "bun", "deno"],
+  "keywords": [
+    "stoat",
+    "stoatframework",
+    "cli",
+    "scaffold",
+    "framework",
+    "bun",
+    "deno"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SyntaxImagination/Stoat-Framework.git",
-    "directory": "CLI"
+    "url": "git+https://github.com/SyntaxImagination/StoatFramework-CLI.git"
   },
   "author": "Syntax Imagination",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SyntaxImagination/Stoat-Framework/issues"
+    "url": "https://github.com/SyntaxImagination/StoatFramework-CLI/issues"
   },
-  "homepage": "https://github.com/SyntaxImagination/Stoat-Framework#readme",
+  "homepage": "https://github.com/SyntaxImagination/StoatFramework-CLI#readme",
   "publishConfig": {
     "access": "public"
   }

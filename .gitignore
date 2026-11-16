@@ -1,0 +1,7 @@
+# Build output of scripts/build-template.js (rebuilt on every pack)
+template/
+LICENSE
+*.tgz
+
+node_modules/
+.DS_Store

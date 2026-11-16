@@ -49,6 +49,26 @@ Projects made with `stoat init` also list the CLI in `devDependencies`, so `npm 
 
 Full documentation: https://github.com/SyntaxImagination/Stoat-Framework#readme
 
+## Development
+
+This repository is checked out inside the framework repository, the same way as `StoatCore/`:
+
+```bash
+git clone https://github.com/SyntaxImagination/Stoat-Framework.git
+cd Stoat-Framework
+git clone https://github.com/SyntaxImagination/StoatFramework-CLI.git CLI
+npm install && npm test        # includes test/cli-package.test.js
+```
+
+`scripts/build-template.js` copies the framework files from the parent folder (`../System`, `../Helpers`, `../Models`) into `template/`. It cannot run from a standalone clone. In development the CLI reads those files straight from the parent folder.
+
+Publishing, from the framework root (both `package.json` versions must match):
+
+```bash
+npm run cli:pack                            # optional: inspect the tarball
+npm run cli:build && npm publish ./CLI
+```
+
 ## License
 
 MIT
