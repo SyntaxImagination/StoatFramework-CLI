@@ -1,9 +1,33 @@
 {
-  "name": "@stoatframework/cli",
+  "name": "stoatframework-cli",
   "version": "2.0.0",
   "description": "Command-line tool for the Stoat Framework: scaffold, generate, run and update Stoat projects on Node, Bun and Deno",
+  "keywords": [
+    "stoat",
+    "stoatframework",
+    "cli",
+    "scaffold",
+    "framework",
+    "bun",
+    "deno"
+  ],
+  "homepage": "https://github.com/SyntaxImagination/StoatFramework-CLI#readme",
+  "bugs": {
+    "url": "https://github.com/SyntaxImagination/StoatFramework-CLI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyntaxImagination/StoatFramework-CLI.git"
+  },
+  "license": "MIT",
+  "author": "Syntax Imagination",
+  "type": "commonjs",
+  "main": "index.js",
   "bin": {
     "stoat": "bin/stoat.js"
+  },
+  "directories": {
+    "lib": "lib"
   },
   "files": [
     "bin/",
@@ -17,25 +41,6 @@
   "engines": {
     "node": ">=18"
   },
-  "keywords": [
-    "stoat",
-    "stoatframework",
-    "cli",
-    "scaffold",
-    "framework",
-    "bun",
-    "deno"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SyntaxImagination/StoatFramework-CLI.git"
-  },
-  "author": "Syntax Imagination",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SyntaxImagination/StoatFramework-CLI/issues"
-  },
-  "homepage": "https://github.com/SyntaxImagination/StoatFramework-CLI#readme",
   "publishConfig": {
     "access": "public"
   }

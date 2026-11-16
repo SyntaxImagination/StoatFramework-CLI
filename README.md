@@ -1,20 +1,20 @@
-# @stoatframework/cli
+# stoatframework-cli
 
 The `stoat` command for the [Stoat Framework](https://github.com/SyntaxImagination/Stoat-Framework): scaffold, generate, run and update Stoat projects on Node.js, Bun and Deno. It has no dependencies.
 
 ## Install
 
 ```bash
-npm install -g @stoatframework/cli
+npm install -g stoatframework-cli
 stoat init
 ```
 
 Or run it without installing:
 
 ```bash
-npx @stoatframework/cli init               # npm
-bunx @stoatframework/cli init              # Bun
-deno run -A npm:@stoatframework/cli init   # Deno
+npx stoatframework-cli init               # npm
+bunx stoatframework-cli init              # Bun
+deno run -A npm:stoatframework-cli init   # Deno
 ```
 
 Use the full package name with `npx`. `npx stoat` fetches a different, unrelated package.
@@ -39,7 +39,7 @@ stoat --version                    Framework version this CLI installs
 The CLI version is the framework version. The package contains the framework files (`System/`, `Models/`, `Helpers/`) that `stoat init` copies and `stoat update` refreshes. To upgrade a project:
 
 ```bash
-npm install -g @stoatframework/cli@latest
+npm install -g stoatframework-cli@latest
 cd my-app
 stoat update --check   # preview
 stoat update
@@ -66,7 +66,7 @@ Publishing, from the framework root (both `package.json` versions must match):
 
 ```bash
 npm run cli:pack                            # optional: inspect the tarball
-npm run cli:build && npm publish ./CLI
+npm run cli:publish
 ```
 
 ## License
