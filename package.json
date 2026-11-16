@@ -1,0 +1,35 @@
+{
+  "name": "@stoatframework/cli",
+  "version": "2.0.0",
+  "description": "Command-line tool for the Stoat Framework: scaffold, generate, run and update Stoat projects on Node, Bun and Deno",
+  "bin": {
+    "stoat": "bin/stoat.js"
+  },
+  "files": [
+    "bin/",
+    "commands/",
+    "lib/",
+    "template/"
+  ],
+  "scripts": {
+    "prepack": "node scripts/build-template.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["stoat", "stoatframework", "cli", "scaffold", "framework", "bun", "deno"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyntaxImagination/Stoat-Framework.git",
+    "directory": "CLI"
+  },
+  "author": "Syntax Imagination",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SyntaxImagination/Stoat-Framework/issues"
+  },
+  "homepage": "https://github.com/SyntaxImagination/Stoat-Framework#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
